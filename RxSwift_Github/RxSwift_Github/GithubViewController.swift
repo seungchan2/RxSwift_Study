@@ -37,11 +37,9 @@ class GithubViewController: UIViewController {
     func fetchRepositories(of organization: String) {
         Observable.from([organization])
             .map { organization -> URL in
-                dump(organization)
                 return URL(string: "https://api.github.com/orgs/\(organization)/repos")!
             }
             .map { url -> URLRequest in
-                dump(url)
                 var request = URLRequest(url: url)
                 request.httpMethod = "GET"
                 return request

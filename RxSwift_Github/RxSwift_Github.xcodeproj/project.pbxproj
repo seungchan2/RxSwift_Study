@@ -7,17 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC99153B2833B87D00542115 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EC99153A2833B87D00542115 /* SnapKit */; };
 		ECD77ECC2824F3B000710157 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD77ECB2824F3B000710157 /* AppDelegate.swift */; };
 		ECD77ECE2824F3B000710157 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD77ECD2824F3B000710157 /* SceneDelegate.swift */; };
 		ECD77ED52824F3B200710157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD77ED42824F3B200710157 /* Assets.xcassets */; };
 		ECD77ED82824F3B200710157 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD77ED62824F3B200710157 /* LaunchScreen.storyboard */; };
-		ECD77EE42824F40300710157 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ECD77EE32824F40300710157 /* SnapKit */; };
-		ECD77EE72824F40D00710157 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = ECD77EE62824F40D00710157 /* Then */; };
 		ECD77EE92824F45000710157 /* GithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD77EE82824F45000710157 /* GithubViewController.swift */; };
 		ECD77EED2824F53800710157 /* GithubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD77EEC2824F53800710157 /* GithubTableViewCell.swift */; };
 		ECD77EEF2824F57100710157 /* Github.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD77EEE2824F57100710157 /* Github.swift */; };
-		ECD77EF22824F6E600710157 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = ECD77EF12824F6E600710157 /* RxCocoa */; };
-		ECD77EF42824F6E600710157 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ECD77EF32824F6E600710157 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,10 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECD77EF22824F6E600710157 /* RxCocoa in Frameworks */,
-				ECD77EE72824F40D00710157 /* Then in Frameworks */,
-				ECD77EF42824F6E600710157 /* RxSwift in Frameworks */,
-				ECD77EE42824F40300710157 /* SnapKit in Frameworks */,
+				EC99153B2833B87D00542115 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,10 +89,7 @@
 			);
 			name = RxSwift_Github;
 			packageProductDependencies = (
-				ECD77EE32824F40300710157 /* SnapKit */,
-				ECD77EE62824F40D00710157 /* Then */,
-				ECD77EF12824F6E600710157 /* RxCocoa */,
-				ECD77EF32824F6E600710157 /* RxSwift */,
+				EC99153A2833B87D00542115 /* SnapKit */,
 			);
 			productName = RxSwift_Github;
 			productReference = ECD77EC82824F3B000710157 /* RxSwift_Github.app */;
@@ -129,9 +120,9 @@
 			);
 			mainGroup = ECD77EBF2824F3B000710157;
 			packageReferences = (
-				ECD77EE22824F40300710157 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				ECD77EE52824F40D00710157 /* XCRemoteSwiftPackageReference "Then" */,
-				ECD77EF02824F6E600710157 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				EC9915392833B87D00542115 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				EC99153C2833B88900542115 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				EC99153D2833B8B900542115 /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = ECD77EC92824F3B000710157 /* Products */;
 			projectDirPath = "";
@@ -375,7 +366,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		ECD77EE22824F40300710157 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		EC9915392833B87D00542115 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -383,15 +374,7 @@
 				kind = branch;
 			};
 		};
-		ECD77EE52824F40D00710157 /* XCRemoteSwiftPackageReference "Then" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/devxoul/Then.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		ECD77EF02824F6E600710157 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		EC99153C2833B88900542115 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
 			requirement = {
@@ -399,28 +382,21 @@
 				kind = branch;
 			};
 		};
+		EC99153D2833B8B900542115 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		ECD77EE32824F40300710157 /* SnapKit */ = {
+		EC99153A2833B87D00542115 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ECD77EE22824F40300710157 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = EC9915392833B87D00542115 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		ECD77EE62824F40D00710157 /* Then */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ECD77EE52824F40D00710157 /* XCRemoteSwiftPackageReference "Then" */;
-			productName = Then;
-		};
-		ECD77EF12824F6E600710157 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ECD77EF02824F6E600710157 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		ECD77EF32824F6E600710157 /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ECD77EF02824F6E600710157 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
